@@ -58,7 +58,7 @@ Our AI assistant acts as a **24×7 Personal Fitness Coach** by providing:
 
 Instead of creating a traditional chatbot, I built an intelligent AI fitness coach capable of retrieving reliable information from a curated fitness knowledge base.
 
-### Why We Chose This Problem
+### Why I Chose This Problem
 
 Fitness information online is scattered, generic, and often unreliable. Many beginners struggle to create effective workout routines and diet plans.
 
