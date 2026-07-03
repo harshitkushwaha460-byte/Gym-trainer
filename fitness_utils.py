@@ -1,9 +1,9 @@
 import random
 
 
-# -----------------------------
+
 # BMI
-# -----------------------------
+
 def calculate_bmi(weight, height_cm):
 
     height = height_cm / 100
@@ -28,9 +28,9 @@ def bmi_category(bmi):
         return "Obese"
 
 
-# -----------------------------
+
 # BMR
-# -----------------------------
+
 def calculate_bmr(weight, height, age, gender):
 
     if gender.lower() == "male":
@@ -54,9 +54,8 @@ def calculate_bmr(weight, height, age, gender):
     return round(bmr)
 
 
-# -----------------------------
+
 # TDEE
-# -----------------------------
 def calculate_tdee(bmr, activity):
 
     factors = {
@@ -78,9 +77,9 @@ def calculate_tdee(bmr, activity):
     )
 
 
-# -----------------------------
+
 # Calories
-# -----------------------------
+
 def daily_calories(goal, tdee):
 
     goal = goal.lower()
@@ -98,9 +97,9 @@ def daily_calories(goal, tdee):
         return tdee
 
 
-# -----------------------------
+
 # Protein
-# -----------------------------
+
 def protein_requirement(weight, goal):
 
     goal = goal.lower()
@@ -118,17 +117,17 @@ def protein_requirement(weight, goal):
         return round(weight * 1.6)
 
 
-# -----------------------------
+
 # Fat
-# -----------------------------
+
 def fat_requirement(weight):
 
     return round(weight * 0.8)
 
 
-# -----------------------------
+
 # Carbs
-# -----------------------------
+
 def carb_requirement(calories, protein, fat):
 
     protein_cal = protein * 4
@@ -144,17 +143,17 @@ def carb_requirement(calories, protein, fat):
     return round(carbs)
 
 
-# -----------------------------
+
 # Water
-# -----------------------------
+
 def water_requirement(weight):
 
     return round(weight * 0.035, 1)
 
 
-# -----------------------------
+
 # Workout Recommendation
-# -----------------------------
+
 def workout_plan(goal, experience):
 
     goal = goal.lower()
@@ -219,9 +218,9 @@ def workout_plan(goal, experience):
 """
 
 
-# -----------------------------
+
 # Diet Suggestion
-# -----------------------------
+
 def diet_plan(goal, diet):
 
     diet = diet.lower()
@@ -293,11 +292,6 @@ Fruit
 Dinner:
 Grilled Fish
 """
-
-
-# -----------------------------
-# Motivation
-# -----------------------------
 def motivation():
 
     quotes = [
