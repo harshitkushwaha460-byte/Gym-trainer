@@ -31,9 +31,9 @@ class FitnessRAG:
 
         self.build_vector_database()
 
-    ###########################################################
+    
     # LOAD ALL PDFS
-    ###########################################################
+    
 
     def load_pdfs(self):
 
@@ -59,9 +59,9 @@ class FitnessRAG:
 
         return text
 
-    ###########################################################
+    
     # CHUNK TEXT
-    ###########################################################
+    
 
     def chunk_text(self, text):
 
@@ -79,9 +79,9 @@ class FitnessRAG:
 
         return chunks
 
-    ###########################################################
+    
     # BUILD VECTOR DATABASE
-    ###########################################################
+    
 
     def build_vector_database(self):
 
@@ -127,9 +127,9 @@ class FitnessRAG:
 
         print("Vector Store Saved Successfully")
 
-    ###########################################################
+    
     # RETRIEVE
-    ###########################################################
+    
 
     def retrieve(self, query, top_k=5):
 
@@ -159,9 +159,9 @@ class FitnessRAG:
 
         return "\n\n".join(context)
 
-    ###########################################################
+    
     # SEARCH WITH DISTANCE
-    ###########################################################
+    
 
     def retrieve_with_scores(self, query, top_k=5):
 
@@ -201,9 +201,9 @@ class FitnessRAG:
 
         return results
 
-    ###########################################################
+    
     # GET CONTEXT
-    ###########################################################
+    
 
     def get_context(self, question):
 
