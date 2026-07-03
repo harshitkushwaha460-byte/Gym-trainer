@@ -54,7 +54,7 @@ Our AI assistant acts as a **24×7 Personal Fitness Coach** by providing:
 
 ---
 
-## Our Approach
+## Approach
 
 Instead of creating a traditional chatbot, I built an intelligent AI fitness coach capable of retrieving reliable information from a curated fitness knowledge base.
 
