@@ -50,7 +50,7 @@ Our AI assistant acts as a **24×7 Personal Fitness Coach** by providing:
 **Harshit Kushwaha**
 - Role: AI/ML Developer & Full Stack Developer
 - GitHub: https://github.com/harshitkushwaha460-byte
-- LinkedIn: *(Add your LinkedIn)*
+- LinkedIn: www.linkedin.com/in/harshit-kushwaha-093599312
 
 ---
 
