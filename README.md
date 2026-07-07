@@ -200,8 +200,8 @@ Including:
 # 📽️ Demo & Deliverables
 
 ## 🌐 Deployment
-
 https://gymtrainners.streamlit.app/
+<br>(Note: If You Find this app in sleeping mode,Please click on the "get this app back up" And wait some second while app is being ready)
 
 ---
 
