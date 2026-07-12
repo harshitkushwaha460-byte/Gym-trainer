@@ -95,7 +95,7 @@ Fitness information online is scattered, generic, and often unreliable. Many beg
 
 ## AI & Machine Learning
 
-- Google Gemini 2.5 Flash
+- sarvam-105b
 - Sentence Transformers
 - all-MiniLM-L6-v2 Embedding Model
 - Retrieval-Augmented Generation (RAG)
