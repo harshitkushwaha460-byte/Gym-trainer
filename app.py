@@ -1,5 +1,5 @@
 import streamlit as st
-import google.generativeai as genai
+from sarvamai import SarvamAI
 
 from rag import FitnessRAG
 
@@ -17,17 +17,11 @@ st.set_page_config(
 
 )
 
-# -----------------------------
-# GEMINI API
-# -----------------------------
-
-genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
-
-model = genai.GenerativeModel(
-
-    "gemini-2.5-flash"
-
+client = SarvamAI(
+    api_subscription_key=st.secrets["SARVAM_API_KEY"]
 )
+
+
 
 
 
@@ -169,9 +163,9 @@ diet = st.sidebar.selectbox(
 
 )
 
-# -----------------------------
+
 # CALCULATIONS
-# -----------------------------
+
 
 bmi = calculate_bmi(
 
@@ -245,9 +239,7 @@ water = water_requirement(
 
 )
 
-# -----------------------------
-# SHOW STATS
-# -----------------------------
+
 
 st.sidebar.markdown("---")
 
@@ -293,9 +285,9 @@ query = st.chat_input(
     "Ask your fitness question..."
 
 )
-# ---------------------------------------------------
+
 # USER PROFILE
-# ---------------------------------------------------
+
 
 profile = f"""
 Age: {age}
@@ -318,11 +310,9 @@ Fat: {fat} g
 Water: {water} L
 """
 
-# ---------------------------------------------------
-# GEMINI RESPONSE FUNCTION
-# ---------------------------------------------------
 
-def ask_gemini(question):
+
+def ask_sarvam(question):
 
     # Retrieve context from all PDFs
     context = rag.get_context(question)
@@ -396,14 +386,23 @@ RULES
 
 Answer:
 """
+    response = client.chat.completions(
+    model="sarvam-105b",
+    messages=[
+        {
+            "role": "system",
+            "content": "You are an expert AI Personal Fitness Trainer."
+        },
+        {
+            "role": "user",
+            "content": prompt
+        }
+    ]
+)
+    return response.choices[0].message.content
 
-    response = model.generate_content(prompt)
-
-    return response.text
-
-# ---------------------------------------------------
 # CHAT
-# ---------------------------------------------------
+
 
 if query:
 
@@ -421,7 +420,7 @@ if query:
 
         try:
 
-            answer = ask_gemini(query)
+            answer = ask_sarvam(query)
 
         except Exception as e:
 
