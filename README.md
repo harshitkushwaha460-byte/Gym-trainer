@@ -1,6 +1,6 @@
 # 🚀 AI Personal Fitness Assistant Cum Trainer
 
-### *"An AI-powered fitness coach that delivers personalized workout plans, nutrition guidance, and health insights using Retrieval-Augmented Generation (RAG) and Google Gemini."*
+### *"An AI-powered fitness coach that delivers personalized workout plans, nutrition guidance, and health insights using Retrieval-Augmented Generation (RAG) and Sarvam"*
 
 ---
 
