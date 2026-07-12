@@ -139,7 +139,7 @@ Including:
 
 ## APIs
 
-- Google AI Studio (Gemini API)
+- Sarvam API
 
 ---
 
@@ -151,7 +151,7 @@ Including:
 - NumPy
 - Pandas
 - Scikit-learn
-- Google Generative AI SDK
+- Sarvam AI SDK
 
 ---
 
@@ -221,10 +221,6 @@ https://gymtrainners.streamlit.app/
 ---
 
 # 📎 Resources / Credits
-
-### APIs
-
-- Google AI Studio (Gemini API)
 
 ### Embedding Model
 
