@@ -8,7 +8,7 @@
 
 Millions of people rely on generic workout plans and diet recommendations that do not consider their body type, fitness goals, experience level, or health conditions. This often leads to ineffective training, poor nutrition, and inconsistent progress.Most Of The Gym Trainner Ask to Pay Fees After Certain Time.
 
-Our solution is an **AI Personal Fitness Trainer** that provides personalized, evidence-based fitness guidance using **Retrieval-Augmented Generation (RAG)**, semantic search, and Google's Gemini LLM.
+Our solution is an **AI Personal Fitness Trainer** that provides personalized, evidence-based fitness guidance using **Retrieval-Augmented Generation (RAG)**, semantic search
 
 # 🎯 Objective
 
